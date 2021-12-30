@@ -14,10 +14,10 @@ class Solution():
         """
         slow = fast = head
         while slow and fast:
-            if slow == fast.next:
-                return True
             slow = slow.next
             if fast.next: fast = fast.next.next
+            if slow == fast:
+                return fast
         return False
 
 # myList = MyLinkedList()
