@@ -1,3 +1,8 @@
+# class Node:
+#     def __init__(self, val=None, nxt=None):
+#         self.val = val
+#         self.next = nxt
+
 class Solution():
 	def detectCycle(self, head: Node):
 		slow, fast = head, head

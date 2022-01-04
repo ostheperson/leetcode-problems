@@ -1,8 +1,7 @@
-#  Definition for singly-linked list.
-class Node:
-    def __init__(self, val=None, nxt=None):
-        self.val = val
-        self.next = nxt
+# class Node:
+#     def __init__(self, val=None, nxt=None):
+#         self.val = val
+#         self.next = nxt
 
 class Solution():
     def hasCycle(self, head: Node) -> bool:
