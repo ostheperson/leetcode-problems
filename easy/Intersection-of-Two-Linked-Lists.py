@@ -6,7 +6,6 @@
 class Solution:
     # O(1) memory 0(n + m) time
     def getIntersectionNode(self, headA: Node, headB: Node) -> Node:
-
         i = headA; j = headB
         
         while i != j:

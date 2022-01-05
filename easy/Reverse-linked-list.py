@@ -82,11 +82,34 @@ class MyLinkedList:
                 curr.next = curr.next.next
             self.size -= 1
 
-# myList = MyLinkedList()
-# myList.addAtHead(1)
-# myList.addAtIndex(1, 2)
-# myList.addAtIndex(2, 3)
-# myList.addAtTail(5)
+class Solution:
+
+    def reverseLinkedList(self, head) -> Node:
+        top = 0
+        if (head.next != None):
+            head.next = reverseLinkedList(head.next)
+
+        else:
+            top = head
+        return head.next
+        #  1 2 3 
+        #    *
+
+        
+        # prev = None
+        # curr = head
+        # while (curr):
+        #     t = curr.next      
+        #     curr.next = prev
+        #     prev = curr
+        #     curr = t
+        # return prev
+
+myList = MyLinkedList()
+myList.addAtHead(1)
+myList.addAtIndex(1, 2)
+myList.addAtIndex(2, 3)
+# myList.addAtTail(4)
 
 sol = Solution()
-sol.removeNthFromEnd(myList.getNode(0), 1)
+print (sol.reverseLinkedList(myList.getNode(0)).next.val)
