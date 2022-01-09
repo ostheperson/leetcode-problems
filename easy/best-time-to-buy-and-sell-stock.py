@@ -15,7 +15,7 @@ class Solution:
         for i in prices:
             if i < minPrice:
                 minPrice = i
-            if i - minPrice > profit:
+            elif i - minPrice > profit:
                 profit = i - minPrice
         return profit
         
