@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # better memory
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         seen = []
         check = []
@@ -23,3 +24,16 @@ class Solution:
                     seen.append(node)
                 
         return [x.val for x in seen]
+
+    # better speed
+    def inorderTraversalRecursive(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        
+        def inorder(node):
+            if node:
+                inorder(node.left)
+                result.append(node.val)
+                inorder(node.right)
+
+        inorder(root)
+        return result
