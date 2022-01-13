@@ -1,8 +1,4 @@
 class Solution:
-    """
-    dfs traversal would take in a tree
-    intialte queue (toCheck) and a list (checked)
-    """
     def bfs(self, tree):
         toCheck = []
         checked = []
