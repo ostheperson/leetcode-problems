@@ -1,4 +1,11 @@
 class Solution:
+    """
+    tree = { 
+            'a': {'b', 'c'},
+            'b': {'a'}
+            'c': {'a'}
+    }
+    """
     def bfs(self, tree):
         toCheck = []
         checked = []
