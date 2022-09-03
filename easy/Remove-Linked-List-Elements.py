@@ -82,13 +82,22 @@ class MyLinkedList:
                 curr.next = curr.next.next
             self.size -= 1
 
+class Solution:
+    def removeElements(self, head, val: int) -> Node:
+        """
+        set prev to new node 
+        set curr to head
+        while curr.next != None
+            if curr.val == val:
 
-
-# myList = MyLinkedList()
-# myList.addAtHead(1)
-# myList.addAtIndex(1, 2)
-# myList.addAtIndex(2, 3)
-# myList.addAtTail(4)
+            prev = curr
+            curr = curr.next
+        
+        """
+myList = MyLinkedList()
+myList.addAtHead(1)
+myList.addAtIndex(1, 2)
+myList.addAtIndex(2, 3)
+myList.addAtTail(4)
 
 sol = Solution()
-sol.reverseLinkedListRecursive(myList.getNode(0))

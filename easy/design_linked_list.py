@@ -1,9 +1,9 @@
-# class Node:
-# 	def __init__(self, val=None, nxt=None):
-# 		self.val = val
-# 		self.next = nxt
+class Node:
+	def __init__(self, val=None, nxt=None):
+		self.val = val
+		self.next = nxt
 
-class MyLinkedList:
+class LinkedList:
 	def __init__(self):
 		self.head = None
 		self.size = 0
@@ -27,6 +27,14 @@ class MyLinkedList:
 				curr = curr.next
 			return curr.val
 		return -1
+		
+	def getNode(self, index: int):
+		if 0 <= index < self.size:
+			curr = self.head
+			for i in range(index):
+				curr = curr.next
+			return curr
+		return None 
 		
 	def addAtTail(self, val: int) -> None:
 		self.addAtIndex(self.size, val)
