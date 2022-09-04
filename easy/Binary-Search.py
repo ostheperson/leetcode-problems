@@ -1,18 +1,27 @@
-
 def binarySearch(nums, target: int) -> int:
-    lo = 0
-    hi = len(nums)
-    while lo < hi:
-        print ('called')
-        mid = (hi+lo)//2
-        if target > nums[mid]:
-            lo = mid + 1
-        elif target == nums[mid]:
+    """
+    1. set left and right
+    2. if left > right: terminate
+    3. set mid
+    4. if mid < targat: set left to mid + 1
+    5. if mid > targat: set right to mid - 1
+    6. if mid == target return
+    """
+    l = 0
+    r = len(nums) - 1
+    while l <= r:
+        mid = (r + l) // 2
+        if nums[mid] == target:
             return mid
+        elif nums[mid] > target:
+            r = mid - 1
         else:
-            hi = mid
-    if 0 <= lo < len(nums) and nums[lo] == target:
-        return lo
+            l = mid + 1
     return -1
-        
-# print (search([-1,2,3,4,5,6,12], 4))
+
+def binarySearchRecursive(nums, left, right, target):
+
+
+
+
+print (binarySearch([-1,0,3,5,9,12], 13))
