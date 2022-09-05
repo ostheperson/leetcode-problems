@@ -8,11 +8,11 @@ def searchInsert(nums, target: int) -> int:
     while (left <= right):
         mid = (left + right) >> 1
         if nums[mid] == target: return mid
-        if nums[mid] < target:
+        elif nums[mid] < target:
             left = mid + 1
         else:
             right = mid - 1
     return left
     
 
-print (searchInsert([1,4,6,7,9], 3))
+print (searchInsert([], 3))
