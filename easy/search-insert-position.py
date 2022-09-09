@@ -14,4 +14,4 @@ def searchInsert(nums, target: int) -> int:
     return left
     
 
-print (searchInsert([1,1,3,3,3,3,3,3], 3))
+print (searchInsert([1,2,3], 4))
