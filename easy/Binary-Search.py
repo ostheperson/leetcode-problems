@@ -19,9 +19,5 @@ def binarySearch(nums, target: int) -> int:
             l = mid + 1
     return -1
 
-def binarySearchRecursive(nums, left, right, target):
 
-
-
-
-print (binarySearch([-1,0,3,5,9,12], 13))
+print (binarySearch([2,7,11,15], 7))
