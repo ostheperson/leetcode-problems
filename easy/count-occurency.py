@@ -14,8 +14,8 @@ def countOccurency(nums, target):
     # get start index of target
     # get send index of target+1
     startPosition = getStartIndex(nums, target)
-    endPosition = getStartIndex(nums, target)
+    endPosition = getStartIndex(nums, target+1)
     return (endPosition-startPosition)
 
-print (countOccurency([1,2,3,3,3,4], 3))
+print (countOccurency([1,2,3,3,3,4], 2))
 # print (countOccurency([1,2,3,3,3,4,5,6,7,7,7,7,8], 3))
