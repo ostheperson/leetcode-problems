@@ -16,6 +16,6 @@ def bagOfTokensScore(tokens, power) -> int:
     return res
 
 print (bagOfTokensScore([1,4,5,6], 4))
-
+# ssh bitnami@34.195.2.255 -i /marketingblocks.pem
 
 
