@@ -1,11 +1,12 @@
 class Solution:
     """
-    tree = { 
+    tree = {
             'a': {'b', 'c'},
             'b': {'a'}
             'c': {'a'}
     }
     """
+
     def dfs(self, tree):
         toCheck = []
         checked = []
@@ -18,4 +19,3 @@ class Solution:
                 if i not in checked:
                     toCheck.append(i)
         return checked
-
