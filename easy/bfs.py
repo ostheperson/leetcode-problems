@@ -1,9 +1,11 @@
 class Solution:
     """
     tree = { 
-            'a': {'b', 'c'},
-            'b': {'a'}
-            'c': {'a'}
+            'a': ['b', 'c'],
+            'b': ['a', 'e']
+            'c': ['a', 'd', 'f']
+            'd': ['c','f'],
+            'e': ['b']
     }
     """
     def bfs(self, tree):
