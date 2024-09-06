@@ -21,10 +21,7 @@ mkdir -p $TESTS_DIR
 cat <<EOF > $PROBLEMS_DIR/${snake_case_name}.go
 package problems
 
-// ${FUNC_NAME} takes parameters and performs its operation.
-// Add your implementation here.
 func ${FUNC_NAME}() []int {
-    // TODO: Implement ${FUNC_NAME}
     return nil
 }
 EOF
@@ -37,16 +34,15 @@ import (
 	"reflect"
 	"testing"
 
-	"leetcode-problems/problems" // Update this path to match your module structure
+	"leetcode-problems/problems" 
 )
 
 func Test${FUNC_NAME}(t *testing.T) {
 	tests := []struct {
 		expected []int
 	}{
-		// Add your test cases here
 		{
-			expected: []int{}, // Example expected output
+			expected: []int{},
 		},
 	}
 
